@@ -44,9 +44,9 @@ export default function Home() {
       <Container>
 
         <ContentText alignItemX="lgStart" padding="true" className="order-2">
-          <ContentText alignItemX="lgStart" padding="true">
+          <ContentText alignItemX="lgStart" >
             <Caption>Componente Caption</Caption>
-            <Headline alignText="lgStart" color="light">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</Headline>
+            <Headline alignText="lgStart" color="light">Lorem ipsum, dolor sit amet <span className="text-primary-blue">consectetur adipisicing</span> elit.</Headline>
             <Paragraph alignText="lgStart" color="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum odio optio rem, ducimus natus veniam officia magnam.</Paragraph>
 
             <WrapperCommunicatory>
@@ -79,11 +79,31 @@ export default function Home() {
           </ContentText>
         </ContentText>
 
-        <ContentGrid className="order-1" >
+        <ContentGrid className="order-1"  padding="true">
           <p className="text-white bg-neutral-700 w-full py-20 col-span-6 rounded-lg">Content Grid</p>
           <p className="text-white bg-neutral-700 w-full py-20 col-span-6 rounded-lg">Content Grid</p>
           <p className="text-white bg-neutral-700 w-full py-20 col-span-12 rounded-lg">Content Grid</p>
         </ContentGrid>
+
+      </Container>
+    </Section>
+
+    <Section background="dark" paddingY="true" height="full">
+      <Container>
+
+        <ContentText alignItemX="allCenter" padding="true" className="lg:col-span-12">
+          <ContentText className="border">
+            <Caption>Componente Caption</Caption>
+            <Headline color="light">Lorem ipsum, dolor sit amet <span className="text-primary-blue">consectetur adipisicing</span> elit.</Headline>
+            <Paragraph color="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum odio optio rem, ducimus natus veniam officia magnam.</Paragraph>
+
+            <WrapperButton>
+              <Button>Assine agora</Button>
+              <Button style="weak">Conheça nossos planos</Button>
+            </WrapperButton>
+
+          </ContentText>
+        </ContentText>
 
       </Container>
     </Section>

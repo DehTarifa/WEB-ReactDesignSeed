@@ -18,7 +18,7 @@ interface ContainerProps {
 
 const widths = {
   full: ' w-full ',
-  max:  ' w-full max-w-[1400px] '
+  max:  ' w-full max-w-[1450px] '
 }
 
 const paddingsX = {

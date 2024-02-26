@@ -50,15 +50,15 @@ export function Communicatory ({children, styleType = 'simple', headline, subHea
 
   if(styleType === 'complete'){
     return(
-      <div className="flex gap-3 w-full max-w-[450px] ">
+      <div className="flex gap-3 w-full max-w-[450px]">
   
         <div>
           {children}
         </div>
   
         <div className="flex flex-col gap-2">
-          <h3 className={colorsHeadline[colorHeadline]}>{headline}</h3>
-          <h3 className={colorsParagraph[colorParagraph]}>{subHeadline}</h3>
+          <p className={colorsHeadline[colorHeadline]}>{headline}</p>
+          <p className={'text-[14px] ' + colorsParagraph[colorParagraph]}>{subHeadline}</p>
         </div>
   
       </div>
@@ -74,8 +74,8 @@ export function Communicatory ({children, styleType = 'simple', headline, subHea
         </div>
   
         <div className="flex flex-col gap-2">
-          <h3 className={colorsHeadline[colorHeadline]}>{headline}</h3>
-          <h3 className={colorsParagraph[colorParagraph]}>{subHeadline}</h3>
+          <p className={colorsHeadline[colorHeadline]}>{headline}</p>
+          <p className={'text-[14px] ' + colorsParagraph[colorParagraph]}>{subHeadline}</p>
         </div>
   
       </div>
