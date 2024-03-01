@@ -30,11 +30,11 @@ const colorsParagraph = {
 
 // COMPONENT ------------------------------------------------
 
-export function Communicatory ({children, styleType = 'simple', headline, subHeadline, colorHeadline = 'black', colorParagraph = 'black'} :CommunicatoryProps ){
+export function Communicatory ({children, className, styleType = 'simple', headline, subHeadline, colorHeadline = 'black', colorParagraph = 'black'} :CommunicatoryProps ){
   
   if(styleType === 'simple'){
     return(
-      <div className="flex items-center gap-5 w-full max-w-[450px] ">
+      <div className={"flex items-center gap-5 w-full max-w-[450px] " + className}>
   
         <div>
           {children}
@@ -50,7 +50,7 @@ export function Communicatory ({children, styleType = 'simple', headline, subHea
 
   if(styleType === 'complete'){
     return(
-      <div className="flex gap-3 w-full max-w-[450px]">
+      <div className={"flex gap-3 w-full max-w-[450px] " + className}>
   
         <div>
           {children}
@@ -67,7 +67,7 @@ export function Communicatory ({children, styleType = 'simple', headline, subHea
 
   if(styleType === 'highlightIcon'){
     return(
-      <div className="flex items-start gap-5 w-full max-w-[450px] ">
+      <div className={"flex items-start gap-5 w-full max-w-[450px] " + className}>
   
         <div className="p-4 bg-[#3f8cff29] rounded-md">
           {children}

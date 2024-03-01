@@ -8,24 +8,30 @@ import { twMerge } from "tailwind-merge"
 interface WrapperProps {
   children: ReactNode
   className?: string
+
+  alignItem?: 'allCenter' | 'lgStart'
 }
 
 // PROPERTIES -----------------------------------------------
 
+const alignItems = {
+  allCenter: 'justify-center items-center ',
+  lgStart:   'justify-center lg:justify-start lg:items-start '
+}
 
 // COMPONENT ------------------------------------------------
 
-export function WrapperButton ({ children, className } : WrapperProps ){
+export function WrapperButton ({ children, className, alignItem = 'allCenter' } : WrapperProps ){
   return(
-    <div className={twMerge('w-full max-w-[650px] flex flex-col items-center md:flex-row gap-1 lg:mt-10   ', className)}>
+    <div className={twMerge('w-full max-w-[650px] flex flex-col items-center md:flex-row gap-1 lg:mt-5 bg-neutral-700 ', alignItems[alignItem] , className)}>
       {children}
     </div>
   )
 }
 
-export function WrapperCommunicatory ({ children, className } : WrapperProps ){
+export function WrapperCommunicatory ({ children, className, alignItem = 'allCenter' } : WrapperProps ){
   return(
-    <div className={twMerge('w-full max-w-[650px] flex flex-col items-center lg:items-start gap-5 py-10', className)}>
+    <div className={twMerge('w-full max-w-[650px] flex flex-col gap-5 py-10 bg-neutral-700 ', alignItems[alignItem], className)}>
       {children}
     </div>
   )

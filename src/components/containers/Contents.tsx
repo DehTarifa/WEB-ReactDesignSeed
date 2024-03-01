@@ -47,9 +47,9 @@ const paddings = {
 
 // COMPONENT ------------------------------------------------
 
-export function ContentImage({children, className, padding = 'false', alignItemX = 'allCenter', alignItemY = 'center', gridCol = 'default'} : ContentProps ){
+export function ContentImage({children, className, padding = 'false', alignItemY = 'center', gridCol = 'default'} : ContentProps ){
   return(
-    <div className={twMerge('flex bg-primary-gray-300 ', alignItemsX[alignItemX], alignItemsY[alignItemY], paddings[padding], gridCols[gridCol], className)}>
+    <div className={twMerge('flex bg-primary-gray-300 justify-center ', alignItemsY[alignItemY], paddings[padding], gridCols[gridCol], className)}>
       {children}
     </div>
   )
@@ -57,7 +57,7 @@ export function ContentImage({children, className, padding = 'false', alignItemX
 
 export function ContentText({children, className, padding = 'false', alignItemX = 'allCenter', alignItemY = 'center', gridCol = 'default'} : ContentProps ){
   return(
-    <div className={twMerge('flex flex-col gap-5 bg-primary-gray-300 rounded-lg ', alignItemsX[alignItemX], alignItemsY[alignItemY], paddings[padding], gridCols[gridCol], className)}>
+    <div className={twMerge('flex flex-col gap-4 bg-primary-gray-300 rounded-lg ', alignItemsX[alignItemX], alignItemsY[alignItemY], paddings[padding], gridCols[gridCol], className)}>
       {children}
     </div>
   )

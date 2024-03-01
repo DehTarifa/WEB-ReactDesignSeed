@@ -19,94 +19,89 @@ export default function Home() {
   return (
     <main className="">
       
-    <Section background="dark" paddingY="true" height="full">
-      <Container>
+      <Section background="dark" paddingY="true">
+        <Container>
 
-        <ContentText alignItemX="lgStart" padding="true">
-          <Caption>Componente Caption</Caption>
-          <Headline alignText="lgStart" color="light" heading="h1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, laborum nisi <span className="text-primary-blue">componente headline</span> </Headline>
-          <Paragraph alignText="lgStart" color="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum odio optio rem, ducimus natus veniam officia magnam quidem, delectus, nobis nam quam cupiditate voluptatem sed aliquam ratione consequuntur amet?</Paragraph>
+          <ContentText padding="true" alignItemX="allCenter" gridCol="none" className="col-span-12" >
+            
+            <Caption style="solid">Contetent Caption</Caption>
+            <Headline heading="h1" color="light" size="large" >Contente Headline</Headline>
+            <Paragraph color="light">Content Paragráfo</Paragraph>
 
-          <WrapperButton>
-            <Button>Assine agora</Button>
-            <Button style="weak">Conheça nossos planos</Button>
-          </WrapperButton>
-        </ContentText>
+            <WrapperButton alignItem="allCenter">
+              <Button>Assine agora</Button>
+            </WrapperButton>
 
-        <ContentImage alignItemY="center" padding="true">
-          <p className="text-white bg-neutral-700 w-full h-full flex items-center justify-center rounded-lg">Content Imagem</p>
-        </ContentImage>
+          </ContentText>
 
-      </Container>
-    </Section>
+        </Container>
+      </Section>
 
-    <Section background="dark" paddingY="true" height="full">
-      <Container>
+      <Section background="dark" paddingY="true">
+        <Container>
+        
+          <ContentText padding="true" gridCol="default">
+            
+            <Caption style="solid">Contetent Caption</Caption>
+            <Headline color="light" alignText="lgStart" size="medium" >Contente Headline</Headline>
+            <Paragraph color="light" alignText="lgStart" >Content Paragráfo</Paragraph>
 
-        <ContentText alignItemX="lgStart" padding="true" className="order-2">
-          <ContentText alignItemX="lgStart" >
-            <Caption>Componente Caption</Caption>
-            <Headline alignText="lgStart" color="light">Lorem ipsum, dolor sit amet <span className="text-primary-blue">consectetur adipisicing</span> elit.</Headline>
-            <Paragraph alignText="lgStart" color="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum odio optio rem, ducimus natus veniam officia magnam.</Paragraph>
-
-            <WrapperCommunicatory>
-              <Communicatory 
-                styleType="complete"
-                colorHeadline="white"
-                colorParagraph="white"
-                headline={'consectetur adipisicing elit.'} 
-                subHeadline={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum odio optio rem, ducimus natus veniam officia magnam.'}
-              >
-                <ArchiveIcon color="#3F8CFF" size={'26px'} strokeWidth={'1.5'} />
+            <WrapperCommunicatory alignItem="lgStart">
+              
+              <Communicatory styleType="simple" colorHeadline="white" colorParagraph="white"  className="bg-neutral-600"
+                headline={'Header Communicatory'} 
+                subHeadline={'SubHeadline Communicaty'}>
+                A
               </Communicatory>
 
-              <Communicatory 
-                styleType="complete"
-                colorHeadline="white"
-                colorParagraph="white"
-                headline={'consectetur adipisicing elit.'} 
-                subHeadline={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum odio optio rem, ducimus natus veniam officia magnam.'}
-              >
-                <ArchiveIcon color="#3F8CFF" size={'26px'} strokeWidth={'1.5'} />
+              <Communicatory styleType="complete" colorHeadline="white" colorParagraph="white"  className="bg-neutral-600"
+                headline={'Header Communicatory'} 
+                subHeadline={'SubHeadline Communicaty'}>
+                A
               </Communicatory>
+
+              <Communicatory styleType="highlightIcon" colorHeadline="white" colorParagraph="white"  className="bg-neutral-600"
+                headline={'Header Communicatory'} 
+                subHeadline={'SubHeadline Communicaty'}>
+                A
+              </Communicatory>
+              
             </WrapperCommunicatory>
-
-            <WrapperButton>
-              <Button>Assine agora</Button>
-              <Button style="weak">Conheça nossos planos</Button>
-            </WrapperButton>
-
+            
           </ContentText>
-        </ContentText>
 
-        <ContentGrid className="order-1"  padding="true">
-          <p className="text-white bg-neutral-700 w-full py-20 col-span-6 rounded-lg">Content Grid</p>
-          <p className="text-white bg-neutral-700 w-full py-20 col-span-6 rounded-lg">Content Grid</p>
-          <p className="text-white bg-neutral-700 w-full py-20 col-span-12 rounded-lg">Content Grid</p>
-        </ContentGrid>
+          <ContentText padding="true" gridCol="default">
+            
+            <Caption style="solid">Contetent Caption</Caption>
+            <Headline color="light" alignText="lgStart" size="medium" >Contente Headline</Headline>
+            <Paragraph color="light" alignText="lgStart" >Content Paragráfo</Paragraph>
 
-      </Container>
-    </Section>
+            <WrapperCommunicatory alignItem="lgStart">
+              
+              <Communicatory styleType="simple" colorHeadline="white" colorParagraph="white"  className="bg-neutral-600"
+                headline={'Header Communicatory'} 
+                subHeadline={'SubHeadline Communicaty'}>
+                A
+              </Communicatory>
 
-    <Section background="dark" paddingY="true" height="full">
-      <Container>
+              <Communicatory styleType="complete" colorHeadline="white" colorParagraph="white"  className="bg-neutral-600"
+                headline={'Header Communicatory'} 
+                subHeadline={'SubHeadline Communicaty'}>
+                A
+              </Communicatory>
 
-        <ContentText alignItemX="allCenter" padding="true" className="lg:col-span-12">
-          <ContentText className="border">
-            <Caption>Componente Caption</Caption>
-            <Headline color="light">Lorem ipsum, dolor sit amet <span className="text-primary-blue">consectetur adipisicing</span> elit.</Headline>
-            <Paragraph color="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum odio optio rem, ducimus natus veniam officia magnam.</Paragraph>
-
-            <WrapperButton>
-              <Button>Assine agora</Button>
-              <Button style="weak">Conheça nossos planos</Button>
-            </WrapperButton>
-
+              <Communicatory styleType="highlightIcon" colorHeadline="white" colorParagraph="white"  className="bg-neutral-600"
+                headline={'Header Communicatory'} 
+                subHeadline={'SubHeadline Communicaty'}>
+                A
+              </Communicatory>
+              
+            </WrapperCommunicatory>
+            
           </ContentText>
-        </ContentText>
 
-      </Container>
-    </Section>
+        </Container>
+      </Section>
 
     </main>
   )

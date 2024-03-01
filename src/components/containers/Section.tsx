@@ -35,8 +35,9 @@ const backgrounds = {
 // COMPONENT ------------------------------------------------
 
 export function Section ({children, className, height = 'fit', paddingY = 'false', background = 'white' } : SectionProps ){
-  let stylization = 'w-full flex '
 
+  let stylization = 'w-full flex '
+  
   stylization += heights[height]
   stylization += paddingsY[paddingY]
   stylization += backgrounds[background]

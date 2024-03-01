@@ -12,6 +12,7 @@ interface ContainerProps {
   width?: 'full' | 'max'
   paddingX?: 'true' | 'false'
   paddingY?: 'true' | 'false'
+  background?: 'white' | 'dark' | 'blue'
 }
 
 // PROPERTIES -----------------------------------------------
@@ -31,14 +32,22 @@ const paddingsY = {
   false: 'py-0 ',
 }
 
+const backgrounds = {
+  white:  'bg-primary-white-100 ',
+  dark:   'bg-primary-gray-200 ',
+  blue:   'bg-primary-blue ',
+}
+
 // COMPONENT ------------------------------------------------
 
-export function Container( {children, className, width = 'max', paddingX = 'false', paddingY = 'false' } : ContainerProps ){
+export function Container( {children, className, width = 'max', paddingX = 'false', paddingY = 'false', background = 'dark' } : ContainerProps ){
 
-  let stylization = 'grid grid-cols-12 gap-5 mx-auto bg-primary-gray-200 '
+  let stylization = 'grid grid-cols-12 gap-5 mx-auto '
+  
   stylization += widths[width]
   stylization += paddingsX[paddingX]
   stylization += paddingsY[paddingY]
+  stylization += backgrounds[background]
 
   return(
     <div className={twMerge(stylization, className)}>

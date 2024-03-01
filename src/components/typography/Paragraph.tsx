@@ -36,7 +36,7 @@ const alignTexts = {
 export function Paragraph ( { children, color = 'dark', size = 'subheadline', alignText = 'allCenter'} : ParagraphProps) {
   
   return(
-    <p className={twMerge('w-full max-w-[600px] md:max-w-[650px] ', sizes[size], colors[color], alignTexts[alignText])}>{children}</p>
+    <p className={twMerge('w-full max-w-[600px] md:max-w-[650px] bg-neutral-700 ', sizes[size], colors[color], alignTexts[alignText])}>{children}</p>
   )
   
 }

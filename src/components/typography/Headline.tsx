@@ -23,8 +23,8 @@ const colors = {
 }
 
 const sizes = {
-  large:  'text-[28px] leading-[1.2] md:text-[46px] lg:text-[40px] xl:text-[46px] ',
-  medium: 'text-[24px] leading-[1.2] md:text-[32px] lg:text-[28px] lg:leading-[1.2] xl:text-[32px] '
+  large:  'text-[28px] leading-[1.2] md:text-[46px] lg:text-[40px] xl:text-[46px] max-w-[600px] md:max-w-[750px] ',
+  medium: 'text-[24px] leading-[1.2] md:text-[32px] lg:text-[28px] lg:leading-[1.2] xl:text-[32px] max-w-[600px] md:max-w-[650px] '
 }
 
 const alignTexts = {
@@ -37,7 +37,7 @@ const alignTexts = {
 
 export function Headline ( { children, className, color = 'dark', size = 'medium' ,heading = 'h2', alignText = 'allCenter'  } : HeadlineProps) {
   
-  let stylization = 'font-semibold w-full max-w-[600px] md:max-w-[650px] '
+  let stylization = 'font-semibold w-full bg-neutral-700 '
   stylization += sizes[size]
   stylization += colors[color]
   stylization += alignTexts[alignText]
