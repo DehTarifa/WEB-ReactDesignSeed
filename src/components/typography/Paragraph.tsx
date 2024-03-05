@@ -16,7 +16,7 @@ interface ParagraphProps {
 // PROPERTIES -----------------------------------------------
 
 const colors = {
-  light:  'text-primary-white-100 opacity-60  font-light ',
+  light:  'text-white opacity-60  font-light ',
   dark:   'text-primary-gray-100  ',
 }
 
@@ -34,9 +34,7 @@ const alignTexts = {
 // COMPONENT ------------------------------------------------
 
 export function Paragraph ( { children, color = 'dark', size = 'subheadline', alignText = 'allCenter'} : ParagraphProps) {
-  
   return(
-    <p className={twMerge('w-full max-w-[600px] md:max-w-[650px] bg-neutral-700 ', sizes[size], colors[color], alignTexts[alignText])}>{children}</p>
+    <p className={twMerge('w-full max-w-[600px] md:max-w-[656px] ', sizes[size], colors[color], alignTexts[alignText])}>{children}</p>
   )
-  
 }

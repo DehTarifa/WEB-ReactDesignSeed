@@ -23,7 +23,7 @@ const alignItems = {
 
 export function WrapperButton ({ children, className, alignItem = 'allCenter' } : WrapperProps ){
   return(
-    <div className={twMerge('w-full max-w-[650px] flex flex-col items-center md:flex-row gap-1 lg:mt-5 bg-neutral-700 ', alignItems[alignItem] , className)}>
+    <div className={twMerge('w-full max-w-[656px] flex flex-col items-center md:flex-row gap-1 ', alignItems[alignItem] , className)}>
       {children}
     </div>
   )
@@ -31,7 +31,7 @@ export function WrapperButton ({ children, className, alignItem = 'allCenter' } 
 
 export function WrapperCommunicatory ({ children, className, alignItem = 'allCenter' } : WrapperProps ){
   return(
-    <div className={twMerge('w-full max-w-[650px] flex flex-col gap-5 py-10 bg-neutral-700 ', alignItems[alignItem], className)}>
+    <div className={twMerge('w-full max-w-[656px] flex flex-col gap-5 py-10 bg-neutral-700 ', alignItems[alignItem], className)}>
       {children}
     </div>
   )

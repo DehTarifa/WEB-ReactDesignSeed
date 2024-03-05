@@ -28,22 +28,15 @@ const paddingsY = {
 
 const backgrounds = {
   white:  'bg-primary-white-100 ',
-  dark:   'bg-primary-gray-100 ',
+  dark:   'bg-gray-primary ',
   blue:   'bg-primary-blue ',
 }
 
 // COMPONENT ------------------------------------------------
 
 export function Section ({children, className, height = 'fit', paddingY = 'false', background = 'white' } : SectionProps ){
-
-  let stylization = 'w-full flex '
-  
-  stylization += heights[height]
-  stylization += paddingsY[paddingY]
-  stylization += backgrounds[background]
-
   return(
-    <section className={twMerge(stylization, className)}>
+    <section className={twMerge('w-full flex ',heights[height], paddingsY[paddingY], backgrounds[background], className)}>
       {children}
     </section>
   )

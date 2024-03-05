@@ -19,7 +19,7 @@ interface ContainerProps {
 
 const widths = {
   full: ' w-full ',
-  max:  ' w-full max-w-[1450px] '
+  max:  ' w-full max-w-[1456px] '
 }
 
 const paddingsX = {
@@ -34,7 +34,7 @@ const paddingsY = {
 
 const backgrounds = {
   white:  'bg-primary-white-100 ',
-  dark:   'bg-primary-gray-200 ',
+  dark:   'bg-gray-primary ',
   blue:   'bg-primary-blue ',
 }
 
@@ -42,15 +42,8 @@ const backgrounds = {
 
 export function Container( {children, className, width = 'max', paddingX = 'false', paddingY = 'false', background = 'dark' } : ContainerProps ){
 
-  let stylization = 'grid grid-cols-12 gap-5 mx-auto '
-  
-  stylization += widths[width]
-  stylization += paddingsX[paddingX]
-  stylization += paddingsY[paddingY]
-  stylization += backgrounds[background]
-
   return(
-    <div className={twMerge(stylization, className)}>
+    <div className={twMerge('grid grid-cols-12 gap-5 mx-auto ', widths[width], paddingsX[paddingX], paddingsY[paddingY], backgrounds[background], className)}>
       {children}
     </div>
   )
