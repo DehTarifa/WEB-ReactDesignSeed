@@ -6,19 +6,23 @@ import * as React from "react"
 import Link from "next/link"
 
 import { cn } from "@/lib/utils"
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/lib/navigation-menu"
-
+import { NavigationMenu,NavigationMenuContent,NavigationMenuItem,NavigationMenuLink,NavigationMenuList,NavigationMenuTrigger,navigationMenuTriggerStyle,} from "@/lib/navigation-menu"
 import { Container } from "../containers/Container"
 import Image from "next/image"
 import BrandImage from "/public/logo.png"
+
+// ----------------------------------------------------------
+
+interface NavegationMenuLinkProps {
+  title: string
+  url: string
+}
+
+interface NavegationContentInfoProps {
+  title: string
+  subtitle: string
+  url: string
+}
 
 // ----------------------------------------------------------
 
@@ -135,29 +139,9 @@ export function NavigationMenuDemo() {
           <NavigationMenu >
             <NavigationMenuList>
 
-              <NavigationMenuItem>
-                <Link href="" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Home
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <Link href="" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Link Dedicado
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <Link href="" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    ChatBot
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
+              <NavegationMenuLink title="Home" url=""/>
+              <NavegationMenuLink title="Link Dedicado" url=""/>
+              <NavegationMenuLink title="ChatBot" url=""/>
 
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Sobre Nós</NavigationMenuTrigger>
@@ -281,13 +265,7 @@ export function NavigationMenuDemo() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
-              <NavigationMenuItem>
-                <Link href="" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Contato
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
+              <NavegationMenuLink title="Contato" url=""/>
 
             </NavigationMenuList>
           </NavigationMenu>
@@ -299,6 +277,40 @@ export function NavigationMenuDemo() {
 
       </Container>
     </nav>
+  )
+}
+
+// ----------------------------------------------------------
+
+function NavegationMenuLink ({ title, url } : NavegationMenuLinkProps){
+  return(
+    <NavigationMenuItem>
+      <Link href={url} legacyBehavior passHref>
+        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+          {title}
+        </NavigationMenuLink>
+      </Link>
+    </NavigationMenuItem>
+  )
+}
+
+function NavegationContentInfo ({ title, subtitle, url } : NavegationContentInfoProps ) {
+
+  let styleInfo = 'flex h-full w-full select-none flex-col justify-end rounded-md bg-gray-secondary from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md '
+
+  return(
+    <li className="row-span-4">
+      <NavigationMenuLink asChild>
+        <Link href={url} className={styleInfo}>
+          <h3 className="mb-2 mt-4 text-lg text-white font-semibold">
+            {title}
+          </h3>
+          <p className="text-sm leading-5 text-white opacity-50 font-light">
+            {subtitle}
+          </p>
+        </Link>
+      </NavigationMenuLink>
+    </li>
   )
 }
 
