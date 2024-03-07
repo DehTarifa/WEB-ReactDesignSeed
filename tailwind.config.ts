@@ -19,9 +19,24 @@ const config = {
     },
     extend: {
       colors: {
+        
+        // PALETTE COLORS -------------------------------------------
 
-        'gray-primary' : "#1E1E1E",
-        'gray-secondary' : "#242424",
+        'dark-theme-1' : '#0A0A0A',
+        'dark-theme-2' : '#141414',
+        'dark-theme-3' : '#1E1E1E',
+        'dark-theme-4' : '#282828',
+        
+        'light-theme-1' : '#F1F1F1',
+        'light-theme-2' : '#F6F6F6',
+        'light-theme-3' : '#FBFBFB',
+        'light-theme-4' : '#FFFFFF',
+        
+        'green-palette-theme-1' : '#64B42D',
+        'green-palette-theme-2' : '#201F20',
+        'green-palette-theme-3' : '#A8A7A7',
+        'green-palette-theme-4' : '#ECF2E8',
+        
 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -6,7 +6,7 @@ import { NavigationMenuDemo } from "@/components/navegation/Navegation";
 import { Caption } from "@/components/typography/Caption";
 import { Headline } from "@/components/typography/Headline";
 import { Paragraph } from "@/components/typography/Paragraph";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/interface/Button";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,8 +20,8 @@ export default function Home() {
       
       <NavigationMenuDemo/>
 
-      <Section background="dark" height="full" className="pt-[100px]">
-        <Container background="dark">
+      <Section background="darkTheme1" height="full" className="pt-[100px]">
+        <Container>
 
          <ContentText gridCol="none" className="col-span-12">
             <Caption>Comece agora sua jornada</Caption>
@@ -55,6 +55,20 @@ export default function Home() {
               <p className="text-white text-sm opacity-50 leading-6 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugit, doloremque, officiis magni autem repellendus hic</p>
             </div>  
          </ContentGrid>
+
+        </Container>
+      </Section>
+
+      <Section background="darkTheme2" height="full">
+        <Container background="darkTheme3" paddingX="true">
+
+          <ContentText background="darkTheme4" alignItemX="lgStart">
+            <p className="text-[#fff]">Atualização de componente</p>
+
+            <WrapperButton background="darkTheme3">
+              <Button>Assine agora</Button>
+            </WrapperButton>
+          </ContentText>
 
         </Container>
       </Section>

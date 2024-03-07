@@ -1,17 +1,18 @@
 // IMPORT ---------------------------------------------------
 
+import { BackgroundColorThemes, VarBackgroundColorThemes } from "@/constants/ContainerBackgroundColors";
 import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge"
 
-// INTERFACE-------------------------------------------------
+// INTERFACE ------------------------------------------------
 
 interface SectionProps {
-  children: ReactNode
-  className?: string
+  className?:   string
+  children:     ReactNode
+  background?:  VarBackgroundColorThemes
 
-  height?: 'fit' | 'full'
-  paddingY?: 'true' | 'false'
-  background?: 'white' | 'dark' | 'blue'
+  height?:      'fit'   | 'full'
+  paddingY?:    'true'  | 'false'
 }
 
 // PROPERTIES -----------------------------------------------
@@ -26,17 +27,11 @@ const paddingsY = {
   false: 'py-0 '
 }
 
-const backgrounds = {
-  white:  'bg-primary-white-100 ',
-  dark:   'bg-gray-primary ',
-  blue:   'bg-primary-blue ',
-}
-
 // COMPONENT ------------------------------------------------
 
-export function Section ({children, className, height = 'fit', paddingY = 'false', background = 'white' } : SectionProps ){
+export function Section ({children, className, height = 'fit', paddingY = 'false', background = 'lightTheme3' } : SectionProps ){
   return(
-    <section className={twMerge('w-full flex ',heights[height], paddingsY[paddingY], backgrounds[background], className)}>
+    <section className={twMerge('w-full flex ',heights[height], paddingsY[paddingY], BackgroundColorThemes[background], className)}>
       {children}
     </section>
   )

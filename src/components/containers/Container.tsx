@@ -1,18 +1,19 @@
 // IMPORT ---------------------------------------------------
 
+import { BackgroundColorThemes, VarBackgroundColorThemes } from "@/constants/ContainerBackgroundColors";
 import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge"
 
-// INTERFACE-------------------------------------------------
+// INTERFACE ------------------------------------------------
 
 interface ContainerProps {
-  children: ReactNode
-  className?: string
+  className?:   string
+  children:    ReactNode
+  background?:  VarBackgroundColorThemes
 
-  width?: 'full' | 'max'
-  paddingX?: 'true' | 'false'
-  paddingY?: 'true' | 'false'
-  background?: 'white' | 'dark' | 'blue'
+  width?:       'full'  | 'max'
+  paddingX?:    'true'  | 'false'
+  paddingY?:    'true'  | 'false'
 }
 
 // PROPERTIES -----------------------------------------------
@@ -32,18 +33,13 @@ const paddingsY = {
   false: 'py-0 ',
 }
 
-const backgrounds = {
-  white:  'bg-primary-white-100 ',
-  dark:   'bg-gray-primary ',
-  blue:   'bg-primary-blue ',
-}
 
 // COMPONENT ------------------------------------------------
 
-export function Container( {children, className, width = 'max', paddingX = 'false', paddingY = 'false', background = 'dark' } : ContainerProps ){
+export function Container( {children, className, width = 'max', paddingX = 'false', paddingY = 'false', background = 'transparent' } : ContainerProps ){
 
   return(
-    <div className={twMerge('grid grid-cols-12 gap-5 mx-auto ', widths[width], paddingsX[paddingX], paddingsY[paddingY], backgrounds[background], className)}>
+    <div className={twMerge('grid grid-cols-12 gap-5 mx-auto ', widths[width], paddingsX[paddingX], paddingsY[paddingY], BackgroundColorThemes[background], className)}>
       {children}
     </div>
   )

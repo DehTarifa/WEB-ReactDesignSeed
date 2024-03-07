@@ -1,13 +1,15 @@
 // IMPORT ---------------------------------------------------
 
+import { BackgroundColorThemes, VarBackgroundColorThemes } from "@/constants/ContainerBackgroundColors";
 import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge"
 
 // INTERFACE-------------------------------------------------
 
 interface WrapperProps {
-  children: ReactNode
-  className?: string
+  className?:   string
+  children:    ReactNode
+  background?:  VarBackgroundColorThemes
 
   alignItem?: 'allCenter' | 'lgStart'
 }
@@ -21,17 +23,17 @@ const alignItems = {
 
 // COMPONENT ------------------------------------------------
 
-export function WrapperButton ({ children, className, alignItem = 'allCenter' } : WrapperProps ){
+export function WrapperButton ({ children, className, alignItem = 'allCenter', background = 'transparent' } : WrapperProps ){
   return(
-    <div className={twMerge('w-full max-w-[656px] flex flex-col items-center md:flex-row gap-1 ', alignItems[alignItem] , className)}>
+    <div className={twMerge('w-full max-w-[656px] flex flex-col items-center md:flex-row gap-1 ', alignItems[alignItem], BackgroundColorThemes[background], className)}>
       {children}
     </div>
   )
 }
 
-export function WrapperCommunicatory ({ children, className, alignItem = 'allCenter' } : WrapperProps ){
+export function WrapperCommunicatory ({ children, className, alignItem = 'allCenter', background = 'transparent' } : WrapperProps ){
   return(
-    <div className={twMerge('w-full max-w-[656px] flex flex-col gap-5 py-10 bg-neutral-700 ', alignItems[alignItem], className)}>
+    <div className={twMerge('w-full max-w-[656px] flex flex-col gap-5 py-10 bg-neutral-700 ', alignItems[alignItem], BackgroundColorThemes[background], className)}>
       {children}
     </div>
   )

@@ -5,8 +5,8 @@
 import * as React from "react"
 import Link from "next/link"
 
-import { cn } from "@/lib/utils"
-import { NavigationMenu,NavigationMenuContent,NavigationMenuItem,NavigationMenuLink,NavigationMenuList,NavigationMenuTrigger,navigationMenuTriggerStyle,} from "@/lib/navigation-menu"
+import { cn } from "@/util/utils"
+import { NavigationMenu,NavigationMenuContent,NavigationMenuItem,NavigationMenuLink,NavigationMenuList,NavigationMenuTrigger,navigationMenuTriggerStyle,} from "@/components/ui/navigation-menu"
 import { Container } from "../containers/Container"
 import Image from "next/image"
 import BrandImage from "/public/logo.png"
