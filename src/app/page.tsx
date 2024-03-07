@@ -8,6 +8,7 @@ import { Headline } from "@/components/typography/Headline";
 import { Paragraph } from "@/components/typography/Paragraph";
 import { Button } from "@/components/interface/Button";
 import { Metadata } from "next";
+import { Communicatory } from "@/components/interface/Communicatory";
 
 export const metadata: Metadata = {
   title: "Desginer System",
@@ -18,7 +19,6 @@ export default function Home() {
   return (
     <main className="">
       
-      <NavigationMenuDemo/>
 
       <Section background="darkTheme1" height="full" className="pt-[100px]">
         <Container>
@@ -59,18 +59,58 @@ export default function Home() {
         </Container>
       </Section>
 
-      <Section background="darkTheme2" height="full">
-        <Container background="darkTheme3" paddingX="true">
+      <Section background="darkTheme2" height="full" paddingY="true">
+        <Container background="darkTheme3">
 
-          <ContentText background="darkTheme4" alignItemX="lgStart">
-            <p className="text-[#fff]">Atualização de componente</p>
+          <ContentText alignItemX="lgStart" background="darkTheme4" padding="true">
+            <Caption>Comece agora sua jornada</Caption>
+            <Headline size="medium" color="light" alignText="lgStart">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi harum.</Headline>
+            <Paragraph color="light" alignText="lgStart">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi animi minus voluptate velit aperiam, aut fuga quam iusto ut ipsam aut fuga quam</Paragraph>
 
-            <WrapperButton background="darkTheme3">
-              <Button>Assine agora</Button>
+            <WrapperCommunicatory alignItem="lgStart">
+              <Communicatory headline={'Segurança para empresas'} subHeadline={'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi animi minus voluptate veli'} styleType="complete" colorHeadline="white" colorParagraph="white">A</Communicatory>
+            </WrapperCommunicatory>
+
+            <WrapperButton>
+              <Button style="solid">Assine agora</Button>
+              <Button style="weak">Fale com um vendedor</Button>
             </WrapperButton>
           </ContentText>
 
+          <ContentImage padding="true" background="darkTheme4">
+            <div className="h-full w-full bg-green-palette-theme-1 rounded-lg"></div>
+          </ContentImage>
+
         </Container>
+      </Section>
+
+      <Section background="darkTheme2" height="full" paddingY="true">
+        <Container background="darkTheme3">
+
+          <ContentText alignItemX="lgStart" background="darkTheme4" padding="true" className="order-2">
+            <Headline size="medium" color="light" alignText="lgStart">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi harum.</Headline>
+
+            <WrapperCommunicatory alignItem="lgStart">
+              <Communicatory headline={'Segurança para empresas'} subHeadline={'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi animi minus voluptate veli'} styleType="complete" colorHeadline="white" colorParagraph="white">A</Communicatory>
+              <Communicatory headline={'Segurança para empresas'} subHeadline={'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi animi minus voluptate veli'} styleType="complete" colorHeadline="white" colorParagraph="white">A</Communicatory>
+              <Communicatory headline={'Segurança para empresas'} subHeadline={'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi animi minus voluptate veli'} styleType="complete" colorHeadline="white" colorParagraph="white">A</Communicatory>
+            </WrapperCommunicatory>
+
+            <WrapperButton>
+              <Button style="solid">Assine agora</Button>
+              <Button style="weak">Fale com um vendedor</Button>
+            </WrapperButton>
+          </ContentText>
+
+          <ContentImage padding="true" background="darkTheme4" className="order-1">
+            <div className="h-full w-full bg-green-palette-theme-1 rounded-lg"></div>
+          </ContentImage>
+
+        </Container>
+      </Section>
+
+      <Section background="lightTheme1">
+
       </Section>
 
     </main>

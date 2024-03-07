@@ -1,6 +1,7 @@
 
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { NavigationMenuDemo } from "@/components/navegation/Navegation";
 
 const fontWebsite = Poppins({ 
   subsets: ["latin"],
@@ -11,6 +12,7 @@ export default function RootLayout({ children }: Readonly<{children: React.React
   return (
     <html lang="pt-BR">
       <body className={fontWebsite.className}>
+        <NavigationMenuDemo/>
         {children}
       </body>
     </html>

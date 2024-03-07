@@ -8,7 +8,7 @@ import { twMerge } from "tailwind-merge"
 
 interface ContainerProps {
   className?:   string
-  children:    ReactNode
+  children:     ReactNode
   background?:  VarBackgroundColorThemes
 
   width?:       'full'  | 'max'
@@ -32,7 +32,6 @@ const paddingsY = {
   true:  'py-5 ',
   false: 'py-0 ',
 }
-
 
 // COMPONENT ------------------------------------------------
 

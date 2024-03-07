@@ -1,7 +1,6 @@
 // IMPORT ---------------------------------------------------
 
 import Link from "next/link";
-
 import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -26,7 +25,6 @@ const styles = {
 // COMPONENT ------------------------------------------------
 
 export function Button ({children, className, style = 'solid'} :ButtonProps ){
-
   return(
     <Link href={''} className={twMerge('w-full max-w-[420px] flex items-center justify-center h-14 rounded-sm ', styles[style], className)}>
       {children}

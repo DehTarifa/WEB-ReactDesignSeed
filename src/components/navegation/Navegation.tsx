@@ -76,6 +76,69 @@ const services: { title: string; href: string; description: string }[] = [
   },
 ]
 
+const aboutUs: { title: string; href: string; description: string }[] = [
+  {
+    title: "Quem somos",
+    href: "/docs/primitives/alert-dialog",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+  },
+  {
+    title: "Localização",
+    href: "/docs/primitives/alert-dialog",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+  },
+  {
+    title: "Localização",
+    href: "/docs/primitives/alert-dialog",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+  },
+  {
+    title: "Diferencial",
+    href: "/docs/primitives/alert-dialog",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+  },
+  {
+    title: "Diversidade",
+    href: "/docs/primitives/alert-dialog",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+  },
+  {
+    title: "Governança",
+    href: "/docs/primitives/alert-dialog",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+  },
+  {
+    title: "LGPD",
+    href: "/docs/primitives/alert-dialog",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+  },
+  {
+    title: "Nossa Equipe",
+    href: "/docs/primitives/alert-dialog",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+  },
+  {
+    title: "Cabeamento",
+    href: "/docs/primitives/alert-dialog",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+  },
+  {
+    title: "História",
+    href: "/docs/primitives/alert-dialog",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+  },
+]
+
 const utilities: { title: string; href: string; description: string }[] = [
   {
     title: "Termos de utilização",
@@ -127,7 +190,7 @@ const utilities: { title: string; href: string; description: string }[] = [
 export function NavigationMenuDemo() {
   return (
     <nav className="fixed z-10 bg-gray-primary w-full border-b border-[#ffffff0b]">
-      <Container paddingX="true" background="white">
+      <Container paddingX="true" background="darkTheme1">
 
         <div className="col-span-2">
           <Link href={''} className="text-[20px] font-semibold text-white h-full flex items-center">
@@ -147,50 +210,34 @@ export function NavigationMenuDemo() {
                 <NavigationMenuTrigger>Sobre Nós</NavigationMenuTrigger>
 
                 <NavigationMenuContent>
-                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[800px] lg:grid-cols-[.75fr_1fr_1fr]">
+                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[1000px] lg:grid-cols-[250px_1fr_1fr_1fr]">
 
                     <li className="row-span-4">
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gray-secondary from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                              href="/"
-                            >
-                              <div className="mb-2 mt-4 text-lg text-white font-semibold">
-                                TeraCorporation
-                              </div>
-                              <p className="text-sm leading-5 text-white opacity-50 font-light">
-                                Descubra um mundo de possibilidades com tecnologias que fazem sua empresa ir além
-                              </p>
-                            </a>
-                          </NavigationMenuLink>
+                      <NavigationMenuLink asChild>
+                        <a
+                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gray-secondary from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                          href="/"
+                        >
+                          <div className="mb-2 mt-4 text-lg text-white font-semibold">
+                            TeraCorporation
+                          </div>
+                          <p className="text-sm leading-5 text-white opacity-50 font-light">
+                            Descubra um mundo de possibilidades com tecnologias que fazem sua empresa ir além
+                          </p>
+                        </a>
+                      </NavigationMenuLink>
                     </li>
 
-                    <ListItem href="#" title="Conheça a TeraCorp">
-                      Re-usable components built using Radix UI and Tailwind CSS.
-                    </ListItem>
+                    {aboutUs.map((about) => (
+                      <ListItem
+                        key={about.title}
+                        title={about.title}
+                        href={about.href}
+                      >
+                        {about.description}
+                      </ListItem>
+                    ))}
 
-                    <ListItem href="#" title="Nossa Localização">
-                      How to install dependencies and structure your app.
-                    </ListItem>
-
-                    <ListItem href="#" title="Código de conduta">
-                      Styles for headings, paragraphs, lists...etc
-                    </ListItem>
-
-                    <ListItem href="#" title="Diferenciais">
-                      Styles for headings, paragraphs, lists...et </ListItem>
-
-                    <ListItem href="#" title="Diversidade">
-                      Styles for headings, paragraphs, lists...etc
-                    </ListItem>
-
-                    <ListItem href="#" title="Governança">
-                      Styles for headings, paragraphs, lists...etc
-                    </ListItem>
-
-                    <ListItem href="#" title="LGPD">
-                      Styles for headings, paragraphs, lists...etc
-                    </ListItem>
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -323,7 +370,7 @@ const ListItem = React.forwardRef<
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a ref={ref} className={cn("block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-white hover:bg-gray-secondary hover:text-blue-500 focus:bg-gray-secondary focus:text-blue-400",className)}{...props}>
+        <a ref={ref} className={cn("block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-white hover:bg-dark-theme-3 focus:bg-gray-secondary",className)}{...props}>
           <div className="text-sm leading-none font-semibold">{title}</div>
           <p className="line-clamp-2 text-sm font-light leading-snug text-white opacity-50">
             {children}

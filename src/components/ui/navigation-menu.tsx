@@ -34,7 +34,7 @@ NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName
 // ----------------------------------------------------------
 
 const NavigationMenuItem = NavigationMenuPrimitive.Item
-const navigationMenuTriggerStyle = cva("group inline-flex h-20 w-max items-center justify-center px-4 py-2 text-[14px] text-white font-medium transition-colors hover:bg-gray-secondary focus:bg-gray-secondary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-secondary data-[state=open]:bg-gray-secondary")
+const navigationMenuTriggerStyle = cva("group inline-flex h-20 w-max items-center justify-center px-4 py-2 text-[14px] text-white font-medium transition-colors hover:bg-dark-theme-3 focus:bg-dark-theme-3 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-darkTheme1 data-[state=open]:bg-darkTheme1")
 
 const NavigationMenuTrigger = React.forwardRef<
   React.ElementRef<typeof NavigationMenuPrimitive.Trigger>,
@@ -71,7 +71,7 @@ const NavigationMenuViewport = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Viewport>
 >(({ className, ...props }, ref) => (
   <div className={cn("absolute left-0 top-full flex justify-center")}>
-    <NavigationMenuPrimitive.Viewport className={cn("origin-top-center relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border border-[#ffffff0b] bg-gray-primary text-popover-foreground shadow-lg data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 md:w-[var(--radix-navigation-menu-viewport-width)]",className)}ref={ref}{...props}/>
+    <NavigationMenuPrimitive.Viewport className={cn("origin-top-center relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border border-[#ffffff0b] bg-dark-theme-1 text-popover-foreground shadow-lg data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 md:w-[var(--radix-navigation-menu-viewport-width)]",className)}ref={ref}{...props}/>
   </div>
 ))
 NavigationMenuViewport.displayName =
