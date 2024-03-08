@@ -25,7 +25,7 @@ export default function Home() {
 
          <ContentText gridCol="none" className="col-span-12">
             <Caption>Comece agora sua jornada</Caption>
-            <Headline heading="h1" size="large" color="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi harum.</Headline>
+            <Headline heading="h1" size="large" color="light">Lorem ipsum dolor sit amet consectetur <strong className="text-green-palette-theme-1">adipisicing elit</strong> excepturi harum.</Headline>
             <Paragraph color="light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi animi minus voluptate velit aperiam, aut fuga quam iusto ut ipsam aut fuga quam</Paragraph>
 
             <WrapperButton>
@@ -35,22 +35,22 @@ export default function Home() {
          </ContentText>
 
          <ContentGrid gridCol="none" className="col-span-12">
-            <div className="col-span-3 flex flex-col justify-center px-5 border-[#ffffff0b] border-r">
+            <div className="col-span-3 flex flex-col justify-center px-5 border-[#ffffff0b] border-r hover:bg-dark-theme-2 transition-all duration-500">
               <h3 className="font-semibold text-white mb-2">Encontre muitos serviços</h3>
               <p className="text-white text-sm opacity-50 leading-6 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugit, doloremque, officiis magni autem repellendus hic</p>
             </div>
 
-            <div className="col-span-3 flex flex-col justify-center px-5 border-[#ffffff0b] border-r">
+            <div className="col-span-3 flex flex-col justify-center px-5 border-[#ffffff0b] border-r hover:bg-dark-theme-2 transition-all duration-500">
               <h3 className="font-semibold text-white mb-2">Encontre muitos serviços</h3>
               <p className="text-white text-sm opacity-50 leading-6 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugit, doloremque, officiis magni autem repellendus hic</p>
             </div>
 
-            <div className="col-span-3 flex flex-col justify-center px-5 border-[#ffffff0b] border-r">
+            <div className="col-span-3 flex flex-col justify-center px-5 border-[#ffffff0b] border-r hover:bg-dark-theme-2 transition-all duration-500">
               <h3 className="font-semibold text-white mb-2">Encontre muitos serviços</h3>
               <p className="text-white text-sm opacity-50 leading-6 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugit, doloremque, officiis magni autem repellendus hic</p>
             </div>
 
-            <div className="col-span-3 flex flex-col justify-center px-5">
+            <div className="col-span-3 flex flex-col justify-center px-5 hover:bg-dark-theme-2 transition-all duration-500">
               <h3 className="font-semibold text-white mb-2">Encontre muitos serviços</h3>
               <p className="text-white text-sm opacity-50 leading-6 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugit, doloremque, officiis magni autem repellendus hic</p>
             </div>  
@@ -60,9 +60,9 @@ export default function Home() {
       </Section>
 
       <Section background="darkTheme2" height="full" paddingY="true">
-        <Container background="darkTheme3">
+        <Container>
 
-          <ContentText alignItemX="lgStart" background="darkTheme4" padding="true">
+          <ContentText alignItemX="lgStart" padding="true">
             <Caption>Comece agora sua jornada</Caption>
             <Headline size="medium" color="light" alignText="lgStart">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi harum.</Headline>
             <Paragraph color="light" alignText="lgStart">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi animi minus voluptate velit aperiam, aut fuga quam iusto ut ipsam aut fuga quam</Paragraph>
@@ -73,11 +73,11 @@ export default function Home() {
 
             <WrapperButton>
               <Button style="solid">Assine agora</Button>
-              <Button style="weak">Fale com um vendedor</Button>
+              <Button style="outline">Fale com um vendedor</Button>
             </WrapperButton>
           </ContentText>
 
-          <ContentImage padding="true" background="darkTheme4">
+          <ContentImage padding="true">
             <div className="h-full w-full bg-green-palette-theme-1 rounded-lg"></div>
           </ContentImage>
 
@@ -85,9 +85,9 @@ export default function Home() {
       </Section>
 
       <Section background="darkTheme2" height="full" paddingY="true">
-        <Container background="darkTheme3">
+        <Container >
 
-          <ContentText alignItemX="lgStart" background="darkTheme4" padding="true" className="order-2">
+          <ContentText alignItemX="lgStart" padding="true" className="order-2">
             <Headline size="medium" color="light" alignText="lgStart">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi harum.</Headline>
 
             <WrapperCommunicatory alignItem="lgStart">
@@ -102,17 +102,52 @@ export default function Home() {
             </WrapperButton>
           </ContentText>
 
-          <ContentImage padding="true" background="darkTheme4" className="order-1">
+          <ContentImage padding="true" className="order-1">
             <div className="h-full w-full bg-green-palette-theme-1 rounded-lg"></div>
           </ContentImage>
 
         </Container>
       </Section>
 
-      <Section background="lightTheme1">
+      <Section background="lightTheme3" height="full" paddingY="true">
+        <Container>
+          
+          <ContentText padding="true" gridCol="none" className="col-span-12">
+            <Caption>Comece agora sua jornada</Caption>
+            <Headline size="medium" >Lorem ipsum dolor sit amet consectetur <strong className="text-green-palette-theme-1">adipisicing elit</strong> excepturi harum.</Headline>
+            <Paragraph >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi animi minus voluptate velit aperiam, aut fuga quam iusto ut ipsam aut fuga quam</Paragraph>
 
+
+            <WrapperButton>
+              <Button style="solid">Assine agora</Button>
+              <Button style="textded">Fale com um vendedor</Button>
+            </WrapperButton>
+          </ContentText>
+
+          <ContentGrid gridCol="none" className="col-span-12">
+            <div className="col-span-3 flex flex-col justify-center px-5 border-[#ffffff0b] border-r">
+              <h3 className="font-semibold text-green-palette-theme-2 mb-2">Encontre muitos serviços</h3>
+              <p className="text-dark-theme-4 text-sm opacity-50 leading-6 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugit, doloremque, officiis magni autem repellendus hic</p>
+            </div>
+
+            <div className="col-span-3 flex flex-col justify-center px-5 border-[#ffffff0b] border-r">
+              <h3 className="font-semibold text-green-palette-theme-2 mb-2">Encontre muitos serviços</h3>
+              <p className="text-dark-theme-4 text-sm opacity-50 leading-6 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugit, doloremque, officiis magni autem repellendus hic</p>
+            </div>
+
+            <div className="col-span-3 flex flex-col justify-center px-5 border-[#ffffff0b] border-r">
+              <h3 className="font-semibold text-green-palette-theme-2 mb-2">Encontre muitos serviços</h3>
+              <p className="text-dark-theme-4 text-sm opacity-50 leading-6 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugit, doloremque, officiis magni autem repellendus hic</p>
+            </div>
+
+            <div className="col-span-3 flex flex-col justify-center px-5">
+              <h3 className="font-semibold text-green-palette-theme-2 mb-2">Encontre muitos serviços</h3>
+              <p className="text-dark-theme-4 text-sm opacity-50 leading-6 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugit, doloremque, officiis magni autem repellendus hic</p>
+            </div>  
+         </ContentGrid>
+
+        </Container>
       </Section>
-
     </main>
   )
 }

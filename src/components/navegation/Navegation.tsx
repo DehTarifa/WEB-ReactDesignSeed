@@ -26,116 +26,84 @@ interface NavegationContentInfoProps {
 
 // ----------------------------------------------------------
 
-const services: { title: string; href: string; description: string }[] = [
+const aboutUs: { title: string; href: string; description: string }[] = [
   {
-    title: "Link Dedicado",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    title:        "Sobre mim",
+    href:         "",
+    description:  "Conheça um pouco sobre mim e minha tragetória até o mundo da tecnoligia",
   },
   {
-    title: "Projetos Especiais",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
+    title:        "Trabalhos Profissioanais",
+    href:         "",
+    description:  "Veja os trabalhos e web sites que desenvolvi ao longo da minha carreira",
   },
   {
-    title: "Tera Cloud",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    title:        "Habilidade Profissional",
+    href:         "",
+    description:  "Conheça minhas habilidades profissionais que me tornaram capacitado para o desenvolvimento",
   },
   {
-    title: "Tera Link",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    title:        "Objetivos",
+    href:         "",
+    description:  "Minha tragetório profissional pra se tornar um especialista em UI & UX",
   },
   {
-    title: "Tera Protection",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+    title:        "Formação Acadêmica",
+    href:         "",
+    description:  "Conheça um pouco sobre mim e minha tragetória até o mundo da tecnoligia",
   },
   {
-    title: "Tera Security",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+    title:        "Cursos Complementares",
+    href:         "",
+    description:  "Conheça um pouco sobre mim e minha tragetória até o mundo da tecnoligia",
   },
   {
-    title: "Tera Voip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-  {
-    title: "Tera Bot",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+    title:        "Experiência Profissional",
+    href:         "",
+    description:  "Conheça um pouco sobre mim e minha tragetória até o mundo da tecnoligia",
   },
 ]
 
-const aboutUs: { title: string; href: string; description: string }[] = [
+const services: { title: string; href: string; description: string }[] = [
   {
-    title: "Quem somos",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    title:        "Programação",
+    href:         "",
+    description:  "Minha base de estudos para programação",
   },
   {
-    title: "Localização",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    title:        "Figma",
+    href:         "",
+    description:  "Documentaçaõ sobre o figma e conceitos de aprendizado",
   },
   {
-    title: "Localização",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    title:        "User Experience",
+    href:         "",
+    description:  "Conceito sobre o user Experience",
   },
   {
-    title: "Diferencial",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    title:        "User Interface",
+    href:         "",
+    description:  "Base de estudos sobre o ui e componentização",
   },
   {
-    title: "Diversidade",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    title:        "Canvas",
+    href:         "",
+    description:  "Base de estudos sobre Designer Canvas",
   },
   {
-    title: "Governança",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    title:        "Next Js",
+    href:         "",
+    description:  "Conhecimentos sbre o Next js",
   },
   {
-    title: "LGPD",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    title:        "React ",
+    href:         "",
+    description:  "Base de conhecimento sobre o react",
   },
   {
-    title: "Nossa Equipe",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Cabeamento",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "História",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    title:        "TypeScript",
+    href:         "",
+    description:  "Conhecimentos sbre o TypeScript",
   },
 ]
 
@@ -189,12 +157,12 @@ const utilities: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuDemo() {
   return (
-    <nav className="fixed z-10 bg-gray-primary w-full border-b border-[#ffffff0b]">
-      <Container paddingX="true" background="darkTheme1">
+    <nav className="fixed z-10 bg-dark-theme-1 w-full border-b border-[#ffffff0b]">
+      <Container paddingX="true">
 
         <div className="col-span-2">
           <Link href={''} className="text-[20px] font-semibold text-white h-full flex items-center">
-            <Image src={BrandImage} alt="" className="w-full max-w-[180px]"></Image>
+            <p className="text-[26px]">Denner Tarifa</p>
           </Link>
         </div>
 
@@ -203,30 +171,16 @@ export function NavigationMenuDemo() {
             <NavigationMenuList>
 
               <NavegationMenuLink title="Home" url=""/>
-              <NavegationMenuLink title="Link Dedicado" url=""/>
-              <NavegationMenuLink title="ChatBot" url=""/>
+              <NavegationMenuLink title="Trabalhos" url=""/>
+              <NavegationMenuLink title="Habilidades" url=""/>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Sobre Nós</NavigationMenuTrigger>
+                <NavigationMenuTrigger>Sobre mim</NavigationMenuTrigger>
 
                 <NavigationMenuContent>
-                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[1000px] lg:grid-cols-[250px_1fr_1fr_1fr]">
+                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-fit lg:grid-cols-[250px_220px_220px]">
 
-                    <li className="row-span-4">
-                      <NavigationMenuLink asChild>
-                        <a
-                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gray-secondary from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                          href="/"
-                        >
-                          <div className="mb-2 mt-4 text-lg text-white font-semibold">
-                            TeraCorporation
-                          </div>
-                          <p className="text-sm leading-5 text-white opacity-50 font-light">
-                            Descubra um mundo de possibilidades com tecnologias que fazem sua empresa ir além
-                          </p>
-                        </a>
-                      </NavigationMenuLink>
-                    </li>
+                    <NavegationContentInfo title="Sobre mim" subtitle="Desenvolver Front-End com especialidade em UX e UI" url="#"/>
 
                     {aboutUs.map((about) => (
                       <ListItem
@@ -243,26 +197,12 @@ export function NavigationMenuDemo() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Serviços</NavigationMenuTrigger>
+                <NavigationMenuTrigger>Documentação</NavigationMenuTrigger>
 
                 <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-6 md:w-[500px] lg:grid-cols-[.75fr_1fr_1fr] lg:w-[800px] ">
+                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-fit lg:grid-cols-[250px_220px_220px]">
 
-                    <li className="row-span-4">
-                      <NavigationMenuLink asChild>
-                        <a
-                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gray-secondary from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                          href="/"
-                        >
-                          <div className="mb-2 mt-4 text-lg text-white font-semibold">
-                            Tecnologias
-                          </div>
-                          <p className="text-sm leading-5 text-white opacity-50 font-light">
-                            Descubra um mundo de possibilidades com tecnologias que fazem sua empresa ir além
-                          </p>
-                        </a>
-                      </NavigationMenuLink>
-                    </li>
+                  <NavegationContentInfo title="Documentação" subtitle="Documentação de código" url="#"/>
 
                     {services.map((service) => (
                       <ListItem
@@ -281,23 +221,9 @@ export function NavigationMenuDemo() {
                 <NavigationMenuTrigger>Utilidades</NavigationMenuTrigger>
 
                 <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-6 md:w-[500px] lg:grid-cols-[.75fr_1fr_1fr] lg:w-[800px] ">
+                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-fit lg:grid-cols-[250px_220px_220px]">
 
-                    <li className="row-span-4">
-                      <NavigationMenuLink asChild>
-                        <a
-                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gray-secondary from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                          href="/"
-                        >
-                          <div className="mb-2 mt-4 text-lg text-white font-semibold">
-                            Usabilidade
-                          </div>
-                          <p className="text-sm leading-5 text-white opacity-50 font-light">
-                            Termos e condições
-                          </p>
-                        </a>
-                      </NavigationMenuLink>
-                    </li>
+                    <NavegationContentInfo title="Documentação" subtitle="Documentação de código" url="#"/>
 
                     {utilities.map((utilitie) => (
                       <ListItem
@@ -308,6 +234,7 @@ export function NavigationMenuDemo() {
                         {utilitie.description}
                       </ListItem>
                     ))}
+
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -382,3 +309,7 @@ const ListItem = React.forwardRef<
 })
 
 ListItem.displayName = "ListItem"
+
+// ----------------------------------------------------------
+
+
