@@ -28,129 +28,133 @@ interface NavegationContentInfoProps {
 
 const aboutUs: { title: string; href: string; description: string }[] = [
   {
-    title:        "Sobre mim",
-    href:         "",
-    description:  "Conheça um pouco sobre mim e minha tragetória até o mundo da tecnoligia",
+    title:        "Sobre a TeraCorporation",
+    href:         "/about",
+    description:  "A Teracorporation atua há mais de 4 anos no mercado de soluções TI",
   },
   {
-    title:        "Trabalhos Profissioanais",
-    href:         "",
-    description:  "Veja os trabalhos e web sites que desenvolvi ao longo da minha carreira",
+    title:        "Onde Estamos",
+    href:         "/location",
+    description:  "A Teracorporation é uma empresa de soluções tecnológicas comprometida em fornecer serviços ",
   },
   {
-    title:        "Habilidade Profissional",
-    href:         "",
-    description:  "Conheça minhas habilidades profissionais que me tornaram capacitado para o desenvolvimento",
+    title:        "Código Conduta",
+    href:         "/conduct",
+    description:  "Na Teracorporation, acreditamos que a ética e a integridade são fundamentais para ",
   },
   {
-    title:        "Objetivos",
-    href:         "",
-    description:  "Minha tragetório profissional pra se tornar um especialista em UI & UX",
+    title:        "Nosso Diferencial",
+    href:         "/differences",
+    description:  "A Teracorporation tem rede independente e robusta para atender ",
   },
   {
-    title:        "Formação Acadêmica",
-    href:         "",
-    description:  "Conheça um pouco sobre mim e minha tragetória até o mundo da tecnoligia",
+    title:        "Diversidade",
+    href:         "/diversity",
+    description:  "A Teracorporation valoriza e promove a diversidade para alcançar ",
   },
   {
-    title:        "Cursos Complementares",
-    href:         "",
-    description:  "Conheça um pouco sobre mim e minha tragetória até o mundo da tecnoligia",
+    title:        "Governança",
+    href:         "governance",
+    description:  "Para empresas de soluções tecnológicas, isso se torna ainda mais relevante",
   },
   {
-    title:        "Experiência Profissional",
-    href:         "",
-    description:  "Conheça um pouco sobre mim e minha tragetória até o mundo da tecnoligia",
+    title:        "LGPD",
+    href:         "/lgpd",
+    description:  "A Teracorporation está comprometida em proteger a privacidade ",
   },
 ]
 
 const services: { title: string; href: string; description: string }[] = [
   {
-    title:        "Programação",
-    href:         "",
-    description:  "Minha base de estudos para programação",
+    title:        "Link Dedicado",
+    href:         "/dedicatedLink",
+    description:  "Toda a rede da Teracorporation foi desenvolvida em topologia de anel",
   },
   {
-    title:        "Figma",
+    title:        "Projetos Especiais",
     href:         "",
-    description:  "Documentaçaõ sobre o figma e conceitos de aprendizado",
+    description:  "Procurando soluções personalizadas para sua empresa?",
   },
   {
-    title:        "User Experience",
+    title:        "Tera Cloud",
     href:         "",
-    description:  "Conceito sobre o user Experience",
+    description:  "Não arrisque seus dados, proteja-os com o TeraCLOUD!",
   },
   {
-    title:        "User Interface",
+    title:        "Link Temporário",
     href:         "",
-    description:  "Base de estudos sobre o ui e componentização",
+    description:  "Se você está procurando uma conexão de internet de alta velocidade",
   },
   {
-    title:        "Canvas",
+    title:        "Tera Protection",
     href:         "",
-    description:  "Base de estudos sobre Designer Canvas",
+    description:  "A segurança da informação é uma das principais preocupações das empresas",
   },
   {
-    title:        "Next Js",
+    title:        "Tera Security",
     href:         "",
-    description:  "Conhecimentos sbre o Next js",
+    description:  "Com nossa solução, você terá o controle completo do movimento de pessoas",
   },
   {
-    title:        "React ",
+    title:        "Tera Voip ",
     href:         "",
-    description:  "Base de conhecimento sobre o react",
+    description:  "A telefonia em nuvem da Teracorporation, também conhecida como telefonia VOIP",
   },
   {
-    title:        "TypeScript",
+    title:        "TeraBot",
     href:         "",
-    description:  "Conhecimentos sbre o TypeScript",
+    description:  "Revolucione o atendimento de sua empresa",
+  },
+  {
+    title:        "Fibra Apagada",
+    href:         "",
+    description:  "A fibra apagada vem como um serviço externo da teracoporation",
   },
 ]
 
 const utilities: { title: string; href: string; description: string }[] = [
   {
-    title: "Termos de utilização",
-    href: "/docs/primitives/alert-dialog",
+    title: "Comodato Equipamentos",
+    href: "https://www.teracorporation.com.br/termos/COMODATO.pdf",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "O contrato que defere ao AT 579 e 585 da Lei 10406/2022",
   },
   {
-    title: "Contratos",
-    href: "/docs/primitives/alert-dialog",
+    title: "Contrato Permanência",
+    href: "https://www.teracorporation.com.br/termos/CONTRATO_PERMANENCIA.pdf",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "O contrato que defere ao AT 579 e 585 da Lei 10406/2022.",
   },
   {
-    title: "Fale conosco",
-    href: "/docs/primitives/alert-dialog",
+    title: "Prestação de Serviços",
+    href: "https://www.teracorporation.com.br/termos/CONTRATOSCM+SVA_compressed.pdf",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "O contrato visa falar sobre a prestação de serviços ",
+  },
+  {
+    title: "Politica de Privacidade",
+    href: "https://www.teracorporation.com.br/termos/CONTRATOSCM+SVA_compressed.pdf",
+    description:
+      "alguns dados pessoais que pertencem ao cliente para fins específicos de oferta de produtos ",
   },
   {
     title: "Trabalhe Conosco",
-    href: "/docs/primitives/alert-dialog",
+    href: "#",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Venha fazer parte da nossa equipe",
   },
   {
-    title: "Contato NOC",
-    href: "/docs/primitives/alert-dialog",
+    title: "Falar com o NOC",
+    href: "#",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Fale diretamente com nosso suporte especializado do NOC",
   },
   {
-    title: "Apresentação",
-    href: "/docs/primitives/alert-dialog",
+    title: "Falar com o Comercial",
+    href: "#",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Fale com seu vendedor de sucesso",
   },
-  {
-    title: "Outros Serviços",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  
 ]
 
 // ----------------------------------------------------------
@@ -162,7 +166,7 @@ export function NavigationMenuDemo() {
 
         <div className="col-span-2">
           <Link href={''} className="text-[20px] font-semibold text-white h-full flex items-center">
-            <p className="text-[26px]">Denner Tarifa</p>
+            <p className="text-[20px]">Tera Corporation</p>
           </Link>
         </div>
 
@@ -171,16 +175,14 @@ export function NavigationMenuDemo() {
             <NavigationMenuList>
 
               <NavegationMenuLink title="Home" url=""/>
-              <NavegationMenuLink title="Trabalhos" url=""/>
-              <NavegationMenuLink title="Habilidades" url=""/>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Sobre mim</NavigationMenuTrigger>
+                <NavigationMenuTrigger>Sobre Nós</NavigationMenuTrigger>
 
                 <NavigationMenuContent>
                   <ul className="grid gap-3 p-6 md:w-[400px] lg:w-fit lg:grid-cols-[250px_220px_220px]">
 
-                    <NavegationContentInfo title="Sobre mim" subtitle="Desenvolver Front-End com especialidade em UX e UI" url="#"/>
+                    <NavegationContentInfo title="Documentação" subtitle="Documentação de código" url="#"/>
 
                     {aboutUs.map((about) => (
                       <ListItem
@@ -197,12 +199,10 @@ export function NavigationMenuDemo() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Documentação</NavigationMenuTrigger>
+                <NavigationMenuTrigger>Services</NavigationMenuTrigger>
 
                 <NavigationMenuContent>
-                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-fit lg:grid-cols-[250px_220px_220px]">
-
-                  <NavegationContentInfo title="Documentação" subtitle="Documentação de código" url="#"/>
+                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-fit lg:grid-cols-[220px_220px_220px]">
 
                     {services.map((service) => (
                       <ListItem
@@ -238,6 +238,9 @@ export function NavigationMenuDemo() {
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
+
+              <NavegationMenuLink title="ChatBot" url=""/>
+              <NavegationMenuLink title="Link Dedicado" url=""/>
 
               <NavegationMenuLink title="Contato" url=""/>
 

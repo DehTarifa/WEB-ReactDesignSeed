@@ -5,6 +5,7 @@ import { twMerge } from "tailwind-merge";
 
 // INTERFACE-------------------------------------------------
 
+
 interface CaptionProps {
   children: ReactNode
   className?: String

@@ -2,25 +2,21 @@
 
 import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge"
+import { MainTextColors, VarMainTextColors } from "@/constants/ContainerBackgroundColors";
 
 // INTERFACE-------------------------------------------------
 
 interface HeadlineProps {
-  children: ReactNode
-  className?: String
+  children:   ReactNode
+  className?: string
+  color?:     VarMainTextColors
   
-  color?:   'dark' | 'light'
-  heading?:  'h1' | 'h2' 
-  size?:    'large' | 'medium'
+  heading?:   'h1' | 'h2' 
+  size?:      'large' | 'medium'
   alignText?: 'allCenter' | 'lgStart' | 'mdStart'
 }
 
 // PROPERTIES -----------------------------------------------
-
-const colors = {
-  light:  'text-white ',
-  dark:   'text-primary-gray-100 ',
-}
 
 const sizes = {
   large:  'text-[28px] leading-[1.2] md:text-[46px] lg:text-[40px] xl:text-[46px] max-w-[600px] md:max-w-[752px] ',
@@ -35,11 +31,11 @@ const alignTexts = {
 
 // COMPONENT ------------------------------------------------
 
-export function Headline ( { children, className, color = 'dark', size = 'medium' ,heading = 'h2', alignText = 'allCenter'  } : HeadlineProps) {
+export function Headline ( { children, className, color = 'mainTextColors1', size = 'medium' ,heading = 'h2', alignText = 'allCenter'  } : HeadlineProps) {
   
   let stylization = 'font-semibold w-full '
   stylization += sizes[size]
-  stylization += colors[color]
+  stylization += MainTextColors[color]
   stylization += alignTexts[alignText]
 
   if(heading === 'h1'){

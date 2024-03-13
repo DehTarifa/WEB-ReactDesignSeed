@@ -33,7 +33,7 @@ export function WrapperButton ({ children, className, alignItem = 'allCenter', b
 
 export function WrapperCommunicatory ({ children, className, alignItem = 'allCenter', background = 'transparent' } : WrapperProps ){
   return(
-    <div className={twMerge('w-full max-w-[656px] flex flex-col gap-5 py-10 ', alignItems[alignItem], BackgroundColorThemes[background], className)}>
+    <div className={twMerge('w-full max-w-[656px] flex flex-col gap-5 ', alignItems[alignItem], BackgroundColorThemes[background], className)}>
       {children}
     </div>
   )

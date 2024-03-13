@@ -1,24 +1,21 @@
 // IMPORT ---------------------------------------------------
 
+import { MainTextColors, VarMainTextColors } from "@/constants/ContainerBackgroundColors";
 import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 
 // INTERFACE-------------------------------------------------
 
 interface ParagraphProps {
-  children: ReactNode
+  children:   ReactNode
+  color?:     VarMainTextColors
+  className?: string
   
-  color?:   'dark' | 'light'
-  size?:    'subheadline' | 'paragraph'
+  size?:      'subheadline' | 'paragraph'
   alignText?: 'allCenter' | 'lgStart' | 'mdStart'
 }
 
 // PROPERTIES -----------------------------------------------
-
-const colors = {
-  light:  'text-white opacity-60  font-light ',
-  dark:   'text-primary-gray-100  ',
-}
 
 const sizes = {
   subheadline:  'text-[14px] md:text-[16px] leading-[1.6] ',
@@ -33,8 +30,8 @@ const alignTexts = {
 
 // COMPONENT ------------------------------------------------
 
-export function Paragraph ( { children, color = 'dark', size = 'subheadline', alignText = 'allCenter'} : ParagraphProps) {
+export function Paragraph ( { children, className, color = 'mainTextColors5', size = 'subheadline', alignText = 'allCenter'} : ParagraphProps) {
   return(
-    <p className={twMerge('w-full max-w-[600px] md:max-w-[656px] ', sizes[size], colors[color], alignTexts[alignText])}>{children}</p>
+    <p className={twMerge('w-full max-w-[600px] md:max-w-[656px] ', sizes[size], MainTextColors[color], alignTexts[alignText], className)}>{children}</p>
   )
 }

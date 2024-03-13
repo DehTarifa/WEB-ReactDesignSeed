@@ -19,13 +19,12 @@ export default function Home() {
   return (
     <main className="">
       
-
       <Section background="darkTheme1" height="full" className="pt-[100px]">
         <Container>
 
          <ContentText gridCol="none" className="col-span-12">
             <Caption>Comece agora sua jornada</Caption>
-            <Headline heading="h1" size="large" color="light">Lorem ipsum dolor sit amet consectetur <strong className="text-green-palette-theme-1">adipisicing elit</strong> excepturi harum.</Headline>
+            <Headline heading="h1" size="large" color="mainTextColors5">Lorem ipsum dolor sit amet consectetur <strong className="text-green-palette-theme-1">adipisicing elit</strong> excepturi harum.</Headline>
             <Paragraph color="light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi animi minus voluptate velit aperiam, aut fuga quam iusto ut ipsam aut fuga quam</Paragraph>
 
             <WrapperButton>

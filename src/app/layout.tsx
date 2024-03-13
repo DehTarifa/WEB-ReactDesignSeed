@@ -13,6 +13,7 @@ export default function RootLayout({ children }: Readonly<{children: React.React
     <html lang="pt-BR">
       <body className={fontWebsite.className}>
         <NavigationMenuDemo/>
+
         {children}
       </body>
     </html>

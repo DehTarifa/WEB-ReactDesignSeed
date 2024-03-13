@@ -32,12 +32,15 @@ const config = {
         'light-theme-3' : '#FBFBFB',
         'light-theme-4' : '#FFFFFF',
         
-        'green-palette-theme-1' : '#64B42D',
-        'green-palette-theme-2' : '#201F20',
-        'green-palette-theme-3' : '#A8A7A7',
-        'green-palette-theme-4' : '#ECF2E8',
+        'emphasis-color-1' : '#162C5B',
+        'emphasis-color-2' : '#1F3564',
+        'emphasis-color-3' : '#798FBE',
+        'emphasis-color-4' : '#2770F1',
+        'emphasis-color-5' : '#519AF5',
+        'emphasis-color-6' : '#697FA8',
+        'emphasis-color-7' : '#A8A7A7',
+        'emphasis-color-8' : '#E6ECFD',
         
-
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
