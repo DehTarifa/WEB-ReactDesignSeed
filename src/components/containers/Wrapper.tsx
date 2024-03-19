@@ -1,6 +1,6 @@
 // IMPORT ---------------------------------------------------
 
-import { BackgroundColorThemes, VarBackgroundColorThemes } from "@/constants/ContainerBackgroundColors";
+import { BackgroundColorThemes, VarBackgroundColorThemes } from "@/constants/colorPalette";
 import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge"
 

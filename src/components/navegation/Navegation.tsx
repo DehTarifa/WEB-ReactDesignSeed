@@ -161,7 +161,7 @@ const utilities: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuDemo() {
   return (
-    <nav className="fixed z-10 bg-dark-theme-1 w-full border-b border-[#ffffff0b]">
+    <nav className="fixed z-10 bg-light-theme-3 w-full border-b border-[#ffffff0b]">
       <Container paddingX="true">
 
         <div className="col-span-2">
@@ -241,6 +241,7 @@ export function NavigationMenuDemo() {
 
               <NavegationMenuLink title="ChatBot" url=""/>
               <NavegationMenuLink title="Link Dedicado" url=""/>
+              <NavegationMenuLink title="Blog" url=""/>
 
               <NavegationMenuLink title="Contato" url=""/>
 

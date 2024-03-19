@@ -10,14 +10,15 @@ interface CaptionProps {
   children: ReactNode
   className?: String
   
-  style?: 'solid' | 'textded'
+  style?: 'solid' | 'textded' | 'darkSolid'
 }
 
 // PROPERTIES -----------------------------------------------
 
 const styles = {
-  solid:   'bg-green-palette-theme-1 px-5 py-2 text-white rounded-full ',
-  textded: 'font-semibold text-primary-blue '
+  solid:   'bg-emphasis-color-4 px-5 py-2 text-emphasis-color-1 rounded-full ',
+  textded: 'font-semibold text-primary-blue ',
+  darkSolid: 'bg-emphasis-color-2 px-5 py-2 text-white rounded-full ',
 }
 
 // COMPONENT ------------------------------------------------

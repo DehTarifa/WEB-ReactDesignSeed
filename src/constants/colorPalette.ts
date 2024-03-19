@@ -43,10 +43,8 @@ export type VarBackgroundColorThemes =
 const MainTextColors = {
   mainTextColors1: 'text-emphasis-color-1 ',
   mainTextColors2: 'text-emphasis-color-3 ',
-  mainTextColors3: 'text-emphasis-color-4 ',
+  mainTextColors3: 'text-emphasis-color-5 ',
   mainTextColors4: 'text-emphasis-color-6 ',
-  mainTextColors5: 'text-emphasis-color-7 ',
-  mainTextColors6: 'text-emphasis-color-8 ',
 }
 
 export type VarMainTextColors = 

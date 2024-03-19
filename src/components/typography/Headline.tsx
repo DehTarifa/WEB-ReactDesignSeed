@@ -2,7 +2,7 @@
 
 import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge"
-import { MainTextColors, VarMainTextColors } from "@/constants/ContainerBackgroundColors";
+import { MainTextColors, VarMainTextColors } from "@/constants/colorPalette";
 
 // INTERFACE-------------------------------------------------
 
