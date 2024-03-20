@@ -38,8 +38,6 @@ const config = {
         'emphasis-color-4' : '#E8F0FF',
         'emphasis-color-5' : '#1E266D',
         'emphasis-color-6' : '#FFFFFF',
-        'emphasis-color-7' : '',
-        'emphasis-color-8' : '',
         
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

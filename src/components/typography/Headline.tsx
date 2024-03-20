@@ -31,7 +31,7 @@ const alignTexts = {
 
 // COMPONENT ------------------------------------------------
 
-export function Headline ( { children, className, color = 'mainTextColors1', size = 'medium' ,heading = 'h2', alignText = 'allCenter'  } : HeadlineProps) {
+export function Headline ( { children, className, color = 'mainTextColors3', size = 'medium' ,heading = 'h2', alignText = 'allCenter'  } : HeadlineProps) {
   
   let stylization = 'font-semibold w-full '
   stylization += sizes[size]
