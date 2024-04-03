@@ -20,7 +20,7 @@ export default function Home(){
     <Section height="full" background="darkTheme1" paddingY="true" className="pt-28">
       <Container background="darkTheme2" className="rounded-lg">
 
-        <ContentText background="darkTheme3" className="rounded-lg" padding="true">
+        <ContentText className="rounded-lg" padding="true">
           <Headline color="mainTextColors4" alignText="lgStart" className="bg-dark-theme-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat deleniti, rem ullam delectus est </Headline>
           <Paragraph color="mainTextColors4" alignText="lgStart" className="bg-dark-theme-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur dolore animi asperiores sunt illo incidunt quod officiis, provident natus iure repellat quasi, possimus aliquam sed, omnis ex repellendus. Sunt, officiis!</Paragraph>
         </ContentText>
@@ -38,14 +38,8 @@ export default function Home(){
       <Container background="darkTheme2" className="rounded-lg">
 
         <ContentText background="darkTheme3" padding="true" alignItemX="lgStart" className="rounded-lg order-2"> 
-          <Caption style="darkSolid">Lorem ipsum dolor sit</Caption>
           <Headline color="mainTextColors4" alignText="lgStart" className="bg-dark-theme-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat deleniti, rem ullam delectus est </Headline>
           <Paragraph color="mainTextColors4" alignText="lgStart" className="bg-dark-theme-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur dolore animi asperiores sunt illo incidunt quod officiis, provident natus iure repellat quasi, possimus aliquam sed, omnis ex repellendus. Sunt, officiis!</Paragraph>
-        
-          <WrapperButton>
-            <Button style="weak">Cadastrar</Button>
-            <Button style="weak">Assine Agora</Button>
-          </WrapperButton>
         </ContentText>
 
         <ContentGrid padding="true" background="darkTheme3" className="rounded-lg">
@@ -61,14 +55,8 @@ export default function Home(){
       <Container background="lightTheme2" className="rounded-lg">
 
         <ContentText background="lightTheme3" padding="true" alignItemX="lgStart" className="rounded-lg">
-          <Caption style="solid">Lorem ipsum dolor sit</Caption>
           <Headline color="mainTextColors3" alignText="lgStart" className="bg-light-theme-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat deleniti, rem ullam delectus est </Headline>
           <Paragraph color="mainTextColors2" alignText="lgStart" className="bg-light-theme-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur dolore animi asperiores sunt illo incidunt quod officiis, provident natus iure repellat quasi, possimus aliquam sed, omnis ex repellendus. Sunt, officiis!</Paragraph>
-        
-          <WrapperButton>
-            <Button style="weak">Cadastrar</Button>
-            <Button style="textded">Assine Agora</Button>
-          </WrapperButton>
         </ContentText>
 
         <ContentGrid padding="true" background="lightTheme3" className="rounded-lg">
@@ -84,19 +72,49 @@ export default function Home(){
       <Container background="lightTheme2" className="rounded-lg">
 
         <ContentText background="lightTheme3" padding="true" alignItemX="lgStart" className="rounded-lg">
-          <Caption style="solid">Lorem ipsum dolor sit</Caption>
           <Headline color="mainTextColors3" alignText="lgStart" className="bg-light-theme-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat deleniti, rem ullam delectus est </Headline>
           <Paragraph color="mainTextColors2" alignText="lgStart" className="bg-light-theme-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur dolore animi asperiores sunt illo incidunt quod officiis, provident natus iure repellat quasi, possimus aliquam sed, omnis ex repellendus. Sunt, officiis!</Paragraph>
-        
-          <WrapperButton>
-            <Button style="weak">Cadastrar</Button>
-            <Button style="textded">Assine Agora</Button>
-          </WrapperButton>
         </ContentText>
 
       </Container>
     </Section>
 
+    <Section height="full" background="lightTheme4" paddingY="true">
+      <Container background="lightTheme2" className="rounded-lg">
+
+        <ContentText background="lightTheme3" padding="true" alignItemX="allCenter" className="rounded-lg">
+          <Button redirect="TesteRedirect" style="emphasis">emphasis</Button>
+        </ContentText>
+
+        <ContentText background="lightTheme3" padding="true" alignItemX="allCenter" className="rounded-lg">
+          <Caption style="emphasis">Lorem ipsum dolor sit</Caption>
+          <Caption style="ligth">Lorem ipsum dolor sit</Caption>
+          <Caption style="dark">Lorem ipsum dolor sit</Caption>
+          <Caption style="texted">Lorem ipsum dolor sit</Caption>
+          <Caption style="ghost">Lorem ipsum dolor sit</Caption>
+        </ContentText>
+
+      </Container>
+    </Section>
+
+    <Section height="full" background="darkTheme1" paddingY="true">
+      <Container className="rounded-lg">
+
+        <ContentText padding="true" alignItemX="allCenter" className="rounded-lg">
+          <Caption style="emphasis">Lorem ipsum dolor sit</Caption>
+        </ContentText>
+
+        <ContentText padding="true" alignItemX="allCenter" className="rounded-lg">
+          <Caption style="emphasis">Lorem ipsum dolor sit</Caption>
+          <Caption style="ligth">Lorem ipsum dolor sit</Caption>
+          <Caption style="dark">Lorem ipsum dolor sit</Caption>
+          <Caption style="texted">Lorem ipsum dolor sit</Caption>
+          <Caption style="ghost">Lorem ipsum dolor sit</Caption>
+        </ContentText>
+
+      </Container>
+    </Section>
+    
     </main>
   )
 }

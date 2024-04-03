@@ -45,7 +45,7 @@ const MainTextColors = {
   mainTextColors2: 'text-emphasis-color-3 ',
   mainTextColors3: 'text-emphasis-color-5 ',
   mainTextColors4: 'text-emphasis-color-6 ',
-  mainTextColors5: ' ',
+  mainTextColors5: 'text-[#9c9c9c] ',
   mainTextColors6: ' ',
 }
 
