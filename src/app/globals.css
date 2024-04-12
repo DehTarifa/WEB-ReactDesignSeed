@@ -75,12 +75,32 @@
   }
 }
 
-::-webkit-scrollbar{
-  background-color: #1E1E1E;
-  width: 5px;
+.scrollSectionCards::-webkit-scrollbar{
+  display: none;
 }
 
-::-webkit-scrollbar-thumb{
-  background-color: rgb(43, 98, 215);
-  border-radius: 5px;
+.scrollContainerCards{
+  animation: 35s sliderLeft infinite linear;
+}
+
+.scrollContainerCards2{
+  animation: 35s sliderRigth infinite linear;
+}
+
+@keyframes sliderLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes sliderRigth {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
