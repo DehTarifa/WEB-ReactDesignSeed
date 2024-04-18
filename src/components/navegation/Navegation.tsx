@@ -161,17 +161,17 @@ const utilities: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuDemo() {
   return (
-    <nav className="fixed z-10 bg-light-theme-3 w-full border-b border-[#ffffff0b]">
+    <nav className="fixed z-10 bg-light-theme-3 w-full border-b border-emphasis-color-4">
       <Container paddingX="true">
 
         <div className="col-span-2">
-          <Link href={''} className="text-[20px] font-semibold text-white h-full flex items-center">
+          <Link href={''} className="text-[20px] font-semibold text-emphasis-color-5 h-full flex items-center">
             <p className="text-[20px]">Tera Corporation</p>
           </Link>
         </div>
 
         <div className="col-span-10">
-          <NavigationMenu >
+          <NavigationMenu>
             <NavigationMenuList>
 
               <NavegationMenuLink title="Home" url=""/>
@@ -179,7 +179,7 @@ export function NavigationMenuDemo() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Sobre Nós</NavigationMenuTrigger>
 
-                <NavigationMenuContent>
+                <NavigationMenuContent className="bg-light-theme-4">
                   <ul className="grid gap-3 p-6 md:w-[400px] lg:w-fit lg:grid-cols-[250px_220px_220px]">
 
                     <NavegationContentInfo title="Documentação" subtitle="Documentação de código" url="#"/>
@@ -280,10 +280,10 @@ function NavegationContentInfo ({ title, subtitle, url } : NavegationContentInfo
     <li className="row-span-4">
       <NavigationMenuLink asChild>
         <Link href={url} className={styleInfo}>
-          <h3 className="mb-2 mt-4 text-lg text-white font-semibold">
+          <h3 className="mb-2 mt-4 text-lg text-emphasis-color-5 font-semibold">
             {title}
           </h3>
-          <p className="text-sm leading-5 text-white opacity-50 font-light">
+          <p className="text-sm leading-5 text-emphasis-color-5 opacity-50 font-light">
             {subtitle}
           </p>
         </Link>
@@ -301,9 +301,9 @@ const ListItem = React.forwardRef<
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a ref={ref} className={cn("block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-white hover:bg-dark-theme-3 focus:bg-gray-secondary",className)}{...props}>
+        <a ref={ref} className={cn("block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-emphasis-color-5 hover:bg-dark-theme-3 focus:bg-gray-secondary",className)}{...props}>
           <div className="text-sm leading-none font-semibold">{title}</div>
-          <p className="line-clamp-2 text-sm font-light leading-snug text-white opacity-50">
+          <p className="line-clamp-2 text-sm font-light leading-snug text-emphasis-color-5 opacity-50">
             {children}
           </p>
         </a>

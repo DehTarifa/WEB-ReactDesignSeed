@@ -19,7 +19,7 @@ interface ParagraphProps {
 
 const sizes = {
   subheadline:  'text-[14px] md:text-[16px] leading-[1.6] ',
-  paragraph:    'text-[12px] | md:text-[14px] ',
+  paragraph:    'text-[12px] md:text-[14px] ',
 }
 
 const alignTexts = {
@@ -30,7 +30,7 @@ const alignTexts = {
 
 // COMPONENT ------------------------------------------------
 
-export function Paragraph ( { children, className, color = 'mainTextColors5', size = 'subheadline', alignText = 'allCenter'} : ParagraphProps) {
+export function Paragraph ( { children, className, color = 'mainTextColors2', size = 'subheadline', alignText = 'allCenter'} : ParagraphProps) {
   return(
     <p className={twMerge('w-full max-w-[600px] md:max-w-[656px] ', sizes[size], MainTextColors[color], alignTexts[alignText], className)}>{children}</p>
   )
