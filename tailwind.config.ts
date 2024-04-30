@@ -19,9 +19,6 @@ const config = {
     },
     extend: {
       colors: {
-        
-<<<<<<< HEAD
-=======
         // PALETTE COLORS -------------------------------------------
 
         'dark-theme-1' : '#0A0A0A',
@@ -40,8 +37,6 @@ const config = {
         'emphasis-color-4' : '#E8F0FF',
         'emphasis-color-5' : '#1E266D',
         'emphasis-color-6' : '#FFFFFF',
-        
->>>>>>> d53ff44e249d69de7a5543fef8ce5e4e4d27b6b3
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

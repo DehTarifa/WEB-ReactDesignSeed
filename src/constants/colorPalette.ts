@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 // PROPERTIES | BACKGROUND COLORS CONTAINERS ----------------
 
 const BackgroundColorThemes = {
@@ -62,4 +61,3 @@ export type VarMainTextColors =
 // COMPONENT EXPORT -----------------------------------------
 
 export { BackgroundColorThemes, MainTextColors }
->>>>>>> d53ff44e249d69de7a5543fef8ce5e4e4d27b6b3

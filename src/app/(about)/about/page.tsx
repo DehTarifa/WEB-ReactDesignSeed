@@ -65,7 +65,7 @@ export default function Home () {
             <Paragraph alignText="lgStart" color="mainTextColors5">Para nós, cultura empresarial forte e qualidade não é negociável.</Paragraph>
           </ContentText>
 
-          <ContentImage background="darkTheme2" className="">
+          <ContentImage  className="">
             <p className="text-[#9c9c9c]">Content Img</p>
           </ContentImage>
 
@@ -80,7 +80,7 @@ export default function Home () {
             <Paragraph alignText="lgStart" color="mainTextColors2">Com uma rede independente e robusta, a Teracorp foi construída para atender as melhores empresas da melhor forma. Com duas sedes no estado de São de Paulo, estamos focados em expandir nossos horizontes e levar nossas soluções para empresas de diferentes ramos em todo território nacional.</Paragraph>
           </ContentText>
 
-          <ContentImage background="darkTheme2" className="order-1 h-[300px]">
+          <ContentImage  className="order-1 h-[300px]">
             <p className="text-[#ffffff]">Content Img</p>
           </ContentImage>
 
@@ -95,7 +95,7 @@ export default function Home () {
             <Paragraph alignText="lgStart" color="mainTextColors2">Ser a maior e melhor empresa de soluções tecnológicas a nível América Latina, alinhando qualidade e eficiência com colaboradores engajados e clientes satisfeitos.</Paragraph>
           </ContentText>
 
-          <ContentImage background="darkTheme2" className="h-[300px] order-2">
+          <ContentImage  className="h-[300px] order-2">
             <p className="text-[#ffffff]">Content Img</p>
           </ContentImage>
 
@@ -110,7 +110,7 @@ export default function Home () {
             <Paragraph alignText="lgStart" color="mainTextColors2">Excelência no atendimento de seus clientes, busca incessante por tecnologia e comprometimento com o bem-estar de seus clientes e colaboradores.</Paragraph>
           </ContentText>
 
-          <ContentImage background="darkTheme2" className="h-[300px] order-1">
+          <ContentImage  className="h-[300px] order-1">
             <p className="text-[#ffffff]">Content Img</p>
           </ContentImage>
 

@@ -1,6 +1,8 @@
+"use client"
+
 // IMPORT ---------------------------------------------------
 
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import { twMerge } from "tailwind-merge"
 
 // INTERFACE ------------------------------------------------
@@ -14,7 +16,7 @@ interface ContainerProps {
   paddingY?:    'true'  | 'false'
 }
 
-// PROPERTIES -----------------------------------------------
+// PROPERTIES --------------------------------------------n---
 
 const widths = {
   full: ' w-full ',
@@ -34,10 +36,18 @@ const paddingsY = {
 // COMPONENT ------------------------------------------------
 
 export function Container( {children, className, width = 'max', paddingX = 'false', paddingY = 'false' } : ContainerProps ){
+const [contador, setContador] = useState(0)
+  function clickName () {
+    setContador(x=> x + 1)
+  }
 
   return(
-    <div className={twMerge('grid grid-cols-12 gap-5 mx-auto ', widths[width], paddingsX[paddingX], paddingsY[paddingY], className)}>
+    <div onClick={clickName} className={twMerge('grid grid-cols-12 gap-5 mx-auto ', widths[width], paddingsX[paddingX], paddingsY[paddingY], className)}>
+      <span className="text-red-500 font-bold">
       {children}
+
+      clicou {contador} vezes
+      </span>
     </div>
   )
 }

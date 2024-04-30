@@ -18,7 +18,7 @@ export default function Home(){
     <main>
 
     <Section height="full" background="darkTheme1" paddingY="true" className="pt-28">
-      <Container background="darkTheme2" className="rounded-lg">
+      <Container className="rounded-lg">
 
         <ContentText className="rounded-lg" padding="true">
           <Headline color="mainTextColors4" alignText="lgStart" className="bg-dark-theme-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat deleniti, rem ullam delectus est </Headline>
@@ -35,7 +35,7 @@ export default function Home(){
     </Section>
 
     <Section height="full" background="darkTheme1" paddingY="true">
-      <Container background="darkTheme2" className="rounded-lg">
+      <Container  className="rounded-lg">
 
         <ContentText background="darkTheme3" padding="true" alignItemX="lgStart" className="rounded-lg order-2"> 
           <Headline color="mainTextColors4" alignText="lgStart" className="bg-dark-theme-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat deleniti, rem ullam delectus est </Headline>
@@ -52,7 +52,7 @@ export default function Home(){
     </Section>
 
     <Section height="full" background="lightTheme4" paddingY="true">
-      <Container background="lightTheme2" className="rounded-lg">
+      <Container  className="rounded-lg">
 
         <ContentText background="lightTheme3" padding="true" alignItemX="lgStart" className="rounded-lg">
           <Headline color="mainTextColors3" alignText="lgStart" className="bg-light-theme-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat deleniti, rem ullam delectus est </Headline>
@@ -69,7 +69,7 @@ export default function Home(){
     </Section>
 
     <Section height="full" background="lightTheme4" paddingY="true">
-      <Container background="lightTheme2" className="rounded-lg">
+      <Container  className="rounded-lg">
 
         <ContentText background="lightTheme3" padding="true" alignItemX="lgStart" className="rounded-lg">
           <Headline color="mainTextColors3" alignText="lgStart" className="bg-light-theme-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat deleniti, rem ullam delectus est </Headline>
@@ -80,7 +80,7 @@ export default function Home(){
     </Section>
 
     <Section height="full" background="lightTheme4" paddingY="true">
-      <Container background="lightTheme2" className="rounded-lg">
+      <Container  className="rounded-lg">
 
         <ContentText background="lightTheme3" padding="true" alignItemX="allCenter" className="rounded-lg">
           <Button redirect="TesteRedirect" style="emphasis">emphasis</Button>
