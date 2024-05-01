@@ -15,7 +15,7 @@ interface ContainerProps {
 // PROPERTIES -----------------------------------------------
 
 const widths = {
-  max:  'lg:max-w-[1520px] xl:lg:max-w-[1600px] ',
+  max:  'max-w-[1520px] xl:max-w-[1600px] ',
   full: ' ',
 }
 
