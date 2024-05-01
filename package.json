@@ -1,6 +1,6 @@
 {
-  "name": "study-react",
-  "version": "0.1.0",
+  "name": "react-designer-seed",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -1,6 +1,5 @@
 // IMPORT ---------------------------------------------------
 
-import { BackgroundColorThemes, VarBackgroundColorThemes } from "@/constants/colorPalette";
 import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge"
 
@@ -9,18 +8,16 @@ import { twMerge } from "tailwind-merge"
 interface ContentProps {
   className?:   string
   children:     ReactNode
-  background?:  VarBackgroundColorThemes
 
   padding?:     'true'      | 'false'
-  alignItemX?:  'allCenter' | 'lgStart'
-  alignItemY?:  'top'       | 'center' | 'bottom'
+  alignItem?:   'allCenter' | 'lgStart'
+  justifyItem?: 'top'       | 'center' | 'bottom'
   gridCol?:     'default'   | 'none'
 }
 
 interface ContentGridProps {
   className?:   string
   children:     ReactNode
-  background?:  VarBackgroundColorThemes
 
   gridCol?:     'default'   | 'none'
   padding?:     'true'      | 'false'
@@ -51,21 +48,6 @@ const paddings = {
 
 // COMPONENT ------------------------------------------------
 
-export function ContentImage({children, className, padding = 'false', alignItemY = 'center', gridCol = 'default', background = 'transparent'} : ContentProps ){
-  return(
-    <div className={twMerge('flex justify-center ', alignItemsY[alignItemY], paddings[padding], gridCols[gridCol], BackgroundColorThemes[background], className)}>
-      {children}
-    </div>
-  )
-}
-
-export function ContentText({children, className, padding = 'false', alignItemX = 'allCenter', alignItemY = 'center', gridCol = 'default', background = 'transparent'} : ContentProps ){
-  return(
-    <div className={twMerge('flex flex-col gap-5 ', alignItemsX[alignItemX], alignItemsY[alignItemY], paddings[padding], gridCols[gridCol], BackgroundColorThemes[background], className)}>
-      {children}
-    </div>
-  )
-}
 
 export function ContentGrid({children, className, padding = 'false', gridCol = 'default', background = 'transparent' } : ContentGridProps ){
   return(

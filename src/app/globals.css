@@ -74,33 +74,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-.scrollSectionCards::-webkit-scrollbar{
-  display: none;
-}
-
-.scrollContainerCards{
-  animation: 35s sliderLeft infinite linear;
-}
-
-.scrollContainerCards2{
-  animation: 35s sliderRigth infinite linear;
-}
-
-@keyframes sliderLeft {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes sliderRigth {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100%);
-  }
-}
